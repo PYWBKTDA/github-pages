@@ -3,6 +3,18 @@ title: Single-Source Shortest Paths with Negative Real Weights in $tilde{O}(mn^{
 date: 2024-11-19
 ---
 
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 $dist^{r}_{G}(u,v)$表示$G$中$u$到$v$经过不超过$r$条负权边的最短路（默认$r=\infty$）
 
 $dist^{r}_{G}(S,v)=\min_{u\in S}dist^{r}_{G}(u,v)$	$R^{r}_{G}(S)=\{v\in V\mid dist^{r}_{G}(S,v)<0\}$
